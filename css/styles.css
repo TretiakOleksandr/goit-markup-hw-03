@@ -1,0 +1,209 @@
+ /* #2196F3 синий акцент*/
+ /* #212121 черный основной*/
+ /* #000000 лого */
+ /* #757575 дополнительный серый */
+ /* #FFFFFF осн заголовок и кнопка */
+ /* rgba(255, 255, 255, 0.6) телефон и почта в футере*/
+
+:root{
+    --accent-color:  #2196F3;
+    --main-font: "Roboto", sans-serif;
+}
+
+body{
+    font-family: var(--main-font);
+}
+
+.list{
+    list-style: none;
+}
+
+.link{
+    text-decoration: none;
+}
+
+/* ----------------------header--------------------------- */
+ .contacts,
+ .footer-contacts{
+     font-style: normal;
+ }
+
+ .site-logo{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    color: #000000;
+ }
+
+ .logo-color{
+     color: #2196F3;
+ }
+
+ .site-nav-menu-link{ 
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;    
+    color: #212121;
+ }
+
+ .current{
+     color: var(--accent-color);
+ }
+
+ .site-nav-menu-link:hover,
+ .site-nav-menu-link:focus,
+ .contacts-list-mail:hover,
+ .contacts-list-mail:focus,
+ .contacts-list-phone:hover,
+ .contacts-list-phone:focus,
+ .footer-address-mail:hover,
+ .footer-address-mail:focus,
+ .footer-address-phone:hover,
+ .footer-address-phone:focus{
+     color: var(--accent-color);
+ }
+
+.contacts-list-phone,
+.contacts-list-mail{
+font-weight: 500;
+font-size: 14px;
+line-height: 1.143;
+letter-spacing: 0.02em;
+color: #757575;
+}
+/* -------------end header--------------------- */
+/* --------------hero------------------------- */
+.hero-header{
+font-weight: 900;
+font-size: 44px;
+line-height: 1.364;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+/* color: #FFFFFF; */
+}
+
+.hero-button{
+font-weight: 700;
+font-size: 16px;
+line-height: 1.875;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+color: #FFFFFF;
+background-color: #2196F3;
+}
+/* -----------------end hero-------------------------- */
+/* -----------------advantages-------------------------- */
+.advantages-name{
+font-weight: 700;
+font-size: 14px;
+line-height: 1.143;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #212121;
+}
+
+.advantages-description{
+font-weight: 400;
+font-size: 14px;
+line-height: 1.714;
+letter-spacing: 0.03em;
+color: #757575;
+}
+/* --------------end advantages */
+/* --------------what we do--------------------- */
+.whatwedo-header,
+.comand-header{
+font-weight: 700;
+font-size: 36px;
+line-height: 1.167;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+}
+/* ---------------------end what we do--------------------------- */
+/* ---------------------comand----------------------- */
+.comand-list-item-name{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.188;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+}
+
+.comand-list-item-profession{
+font-weight: 400;
+font-size: 16px;
+line-height: 1.188;
+text-align: center;
+letter-spacing: 0.03em;
+color: #757575;
+}
+/* ---------------------end comand------------------------- */
+/* ----------------------footer--------------------- */
+.footer{
+    background: #2F303A;
+}
+
+.footer-address-mail,
+.footer-address-phone{
+font-weight: 400;
+font-size: 14px;
+line-height: 1.714;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-address-physical{
+font-weight: 400;
+font-size: 14px;
+line-height: 1.714;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+}
+
+.footer .site-logo{
+    color:#FFFFFF;
+}
+/* ------------------end footer-------------------------- */
+/* ---------------portfolio projects button------------- */
+.project-button{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.625;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+background: #F5F4FA;
+border-radius: 4px;
+}
+
+.project-button:hover,
+.project-button:focus{
+color: #FFFFFF;
+background-color: var(--accent-color);    
+}
+/* -------------end portfolio projects button---------------- */
+/* --------------portfolio projects---------------- */
+.project-name{
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+color: #212121;
+}
+
+.project-description{
+font-weight: 400;
+font-size: 16px;
+line-height: 1.875;
+letter-spacing: 0.03em;
+color: #757575;
+}
+/* ------------end portfolio projects----------- */
