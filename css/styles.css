@@ -355,6 +355,7 @@ background-color: var(--accent-color);
 
 .project-list-item{
     width: 370px;
+    border: solid 1px #EEEEEE;
 }
 
 .project-list-item:not(:nth-child(3n)){
@@ -373,6 +374,8 @@ letter-spacing: 0.06em;
 color: #212121;
 padding-top: 20px;
 padding-bottom: 4px;
+padding-left: 24px;
+padding-right: 24px;
 }
 
 .project-description{
@@ -381,5 +384,8 @@ font-size: 16px;
 line-height: 1.875;
 letter-spacing: 0.03em;
 color: #757575;
+padding-left: 24px;
+padding-right: 24px;
+padding-bottom: 20px;
 }
 /* ------------end portfolio projects----------- */
