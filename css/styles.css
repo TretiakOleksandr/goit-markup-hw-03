@@ -4,6 +4,7 @@
  /* #757575 дополнительный серый */
  /* #FFFFFF осн заголовок и кнопка */
  /* rgba(255, 255, 255, 0.6) телефон и почта в футере*/
+ /* 2F303A вр. фон героя и футера*/
 
 :root{
     --accent-color:  #2196F3;
@@ -22,49 +23,108 @@ body{
     text-decoration: none;
 }
 
-/* ----------------------header--------------------------- */
- .contacts,
- .footer-contacts{
-     font-style: normal;
- }
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
 
- .site-logo{
+ul, ol{
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    display: block;
+}
+
+.container{
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* ----------------------header--------------------------- */
+.header{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.header .container{
+    display: flex;
+    align-items: center;
+}
+
+.site-nav{
+    display: flex;
+    align-items: center;
+}
+
+.site-nav-menu{
+    display: flex;
+}
+
+.contacts-list{
+    display: flex;
+    align-items: center;
+}
+
+.header .site-logo{
+    margin-right: 93px;
+}
+
+.site-nav-menu-item:not(:last-child){
+    margin-right: 50px;
+}
+
+.contacts{
+    margin-left: auto;
+}
+
+.contacts-list-mail{
+    margin-right: 40px;
+}
+
+.contacts,
+.footer-contacts{
+     font-style: normal;
+}
+
+.site-logo{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.192;
     letter-spacing: 0.03em;
     color: #000000;
- }
+}
 
- .logo-color{
+.logo-color{
      color: #2196F3;
- }
+}
 
- .site-nav-menu-link{ 
+.site-nav-menu-link{ 
     font-weight: 500;
     font-size: 14px;
     line-height: 1.143;
     letter-spacing: 0.02em;    
     color: #212121;
- }
+}
 
- .current{
+.current{
      color: var(--accent-color);
- }
+}
 
- .site-nav-menu-link:hover,
- .site-nav-menu-link:focus,
- .contacts-list-mail:hover,
- .contacts-list-mail:focus,
- .contacts-list-phone:hover,
- .contacts-list-phone:focus,
- .footer-address-mail:hover,
- .footer-address-mail:focus,
- .footer-address-phone:hover,
- .footer-address-phone:focus{
+.site-nav-menu-link:hover,
+.site-nav-menu-link:focus,
+.contacts-list-mail:hover,
+.contacts-list-mail:focus,
+.contacts-list-phone:hover,
+.contacts-list-phone:focus,
+.footer-address-mail:hover,
+.footer-address-mail:focus,
+.footer-address-phone:hover,
+.footer-address-phone:focus{
      color: var(--accent-color);
- }
+}
 
 .contacts-list-phone,
 .contacts-list-mail{
@@ -76,6 +136,11 @@ color: #757575;
 }
 /* -------------end header--------------------- */
 /* --------------hero------------------------- */
+.hero-section{
+    background-color: #2F303A;
+    min-height: 600px;
+}
+
 .hero-header{
 font-weight: 900;
 font-size: 44px;
@@ -83,7 +148,9 @@ line-height: 1.364;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
-/* color: #FFFFFF; */
+color: #FFFFFF;
+padding-top: 200px;
+margin-bottom: 30px;
 }
 
 .hero-button{
@@ -96,10 +163,33 @@ align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
 color: #FFFFFF;
-background-color: #2196F3;
+background-color: var(--accent-color);
+border: none;
+cursor: pointer;
+padding: 10px 32px;
+margin-left: auto;
+margin-right: auto;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
 }
 /* -----------------end hero-------------------------- */
 /* -----------------advantages-------------------------- */
+.advantages-section{
+    margin-top: 94px;
+}
+
+.advantages-list{
+    display: flex;
+}
+
+.advantages-list-item{
+    max-width: 270px;
+}
+
+.advantages-list-item:not(:last-child){
+    margin-right: 30px;
+}
+
 .advantages-name{
 font-weight: 700;
 font-size: 14px;
@@ -107,6 +197,7 @@ line-height: 1.143;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #212121;
+margin-bottom: 10px;
 }
 
 .advantages-description{
@@ -118,6 +209,22 @@ color: #757575;
 }
 /* --------------end advantages */
 /* --------------what we do--------------------- */
+.whatwedo-section{
+    margin-top: 94px;
+}
+
+.whatwedo-list{
+    display: flex;
+}
+
+.whatwedo-header{
+    margin-bottom: 50px;
+}
+
+.whatwedo-list-item:not(:last-child){
+    margin-right: 30px;
+}
+
 .whatwedo-header,
 .comand-header{
 font-weight: 700;
@@ -129,6 +236,24 @@ color: #212121;
 }
 /* ---------------------end what we do--------------------------- */
 /* ---------------------comand----------------------- */
+.comand-section{
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+
+.comand-header{
+    padding-top: 94px;
+    margin-bottom: 50px;
+}
+
+.comand-list{
+    display: flex;
+}
+
+.comand-list-item:not(:last-child){
+    margin-right: 30px;
+}
+
 .comand-list-item-name{
 font-weight: 500;
 font-size: 16px;
@@ -149,7 +274,17 @@ color: #757575;
 /* ---------------------end comand------------------------- */
 /* ----------------------footer--------------------- */
 .footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
     background: #2F303A;
+}
+
+.footer .footer-contacts{
+    margin-top: 20px;
+}
+
+.footer-address-item{
+    margin-top: 9px;
 }
 
 .footer-address-mail,
@@ -184,6 +319,9 @@ letter-spacing: 0.03em;
 color: #212121;
 background: #F5F4FA;
 border-radius: 4px;
+border: none;
+cursor: pointer;
+padding: 6px 22px;
 }
 
 .project-button:hover,
